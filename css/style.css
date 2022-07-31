@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+/* 共通設定 */
+body,h1,h2,p,ul,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: "メイリオ", "遊ゴシック", "san-serif";
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.6;
+}
+
+header,footer {
+    background-color: #dbc0a7;
+}
+
+#wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+
+#title-link img {
+    margin: 0 20px 0 15px;
+}
+
+#title-link {
+    display: flex;
+    width: 160px;
+    background-color: #fff;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+#title-link p {
+    display: inline-block;
+}
+
+#title-link:link {
+    color: #503729;
+}
+
+#title-link:visited {
+    color: #636764;
+}
+
+#title-link:hover {
+    color: #B29B85;
+}
+
+#title-info {
+    font-size: 60%;
+}
+
+#title-yunpe {
+    font-weight: bold;
+}
+
+h1,h2 {
+    font-size: 100%;
+    color: #503729;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+em {
+    font-style: normal;
+}
+
+/* TOP↑ボタン */
+.top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    font-size: 77%;
+    font-weight: bold;
+}
+
+.top-btn a {
+    background: rgba(160, 132, 89, 0.8);
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 35px;
+}
+
+.top-btn a:hover {
+    text-decoration: none;
+    background: rgba(99, 75, 24, 0.8);
+}
+
+/* ブリーダーサイトボタン */
+#b-site {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-size: 5px;
+    width: 100px;
+    height: 60px;
+    margin: 25px auto;
+    background-color: rgb(255, 223, 194, 0.8);
+}
+
+#b-site p {
+    margin: auto;
+}
+
+#b-site:link {
+    color: #fff;
+}
+
+#b-site:visited {
+    color: #503729;
+}
+
+#b-site:hover {
+    color: #fff;
+    background-color: rgb(138, 122, 107, 0.8);
+}
+
+
+/* グローバルナビ設定（トップページ以外） */
+
+nav {
+    font-size: 90%;
+    font-weight: bold;
+    width: 270px;
+    margin: 0 auto;
+}
+
+nav a:link {
+    color: #636764;
+}
+
+nav a:visited {
+    color: #a7a09b;
+}
+
+nav a:hover {
+    color: #BC7B77;
+}
+
+nav img {
+    margin-right: 5px;
+}
+
+#g-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.g-nav {
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-menu div {
+    font-size: 90%;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-decoration: underline dotted 4px #e0837e;
+    text-underline-offset: 5px;
+}
+
+.nav-menu:hover {
+    background-color: #eee2da;
+}
+
+#page-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#page-title p,#page-title h1 {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* トップページ設定 */
+#index #yun {
+    margin: 30px;
+}
+
+#greeting-title {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #BC7B77;
+    margin: 0 auto 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting-title h1 {
+    display: inline-block;
+    font-size: 80%;
+    color: #fff;
+}
+
+#greeting-content {
+    background-color: #EEEDE9;
+    max-width: 768px;
+    margin: 0 auto 20px;
+    padding: 10px;
+}
+
+#greeting p {
+    font-size: 80%;
+    margin: 20px 0;
+}
+
+#greeting p span {
+    font-weight: normal;
+}
+
+#time {
+    margin-top: 20px;
+    font-size: 60%;
+}
+
+#index nav {
+    width: 130px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#index nav img {
+    margin-right: 15px;
+}
+
+#index nav li {
+    margin: 20px 0;
+}
+
+#index .nav-menu {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#index .nav-menu div {
+    font-size: 90%;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-decoration: underline dotted 4px #e0837e;
+    text-underline-offset: 5px;
+}
+
+#index nav a:link {
+    color: #636764;
+}
+
+#index nav a:visited {
+    color: #a7a09b;
+}
+
+#index nav a:hover {
+    color: #BC7B77;
+}
+
+#index .nav-menu:hover {
+    background-color: #eee2da;
+}
+
+/* プロフィールページ設定 */
+table {
+    font-size: 80%;
+    width: 375px;
+    border-spacing: 0px 10px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+td,th {
+    padding: 5px 10px;
+}
+
+th {
+    font-weight: normal;
+    color: #fff;
+    background-color: #B29B85;
+}
+
+td {
+    background-color: #EDE9E5;
+}
+
+#about-b {
+    font-size: 90%;
+    background-color: #e9d5c2;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 10px 0;
+}
+
+#about-b p {
+    margin: 20px 0;
+}
+
+#b-site-title {
+    text-decoration: underline dotted 4px #e0837e;
+    text-underline-offset: 5px;
+}
+
+#b-intro {
+    font-size: 90%;
+    margin: 20px 0;
+}
+
+#b-link {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebc19a;
+    border-radius: 20px;
+}
+
+#b-link p {
+    display: inline-block;
+    align-items: center;
+}
+
+#b-link img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+
+#b-title {
+    font-size: 90%;
+    font-weight: bold;
+}
+
+#b-link:link {
+    color: #42342E;
+}
+
+#b-link:visited {
+    color: #9b9896;
+}
+
+#b-link:hover {
+    color: #fff;
+}
+
+iframe {
+    width: 360px;
+    height: 360px;
+    margin: 20px 0;
+}
+
+/* 犬図鑑ページ設定 */
+.dogslib-list {
+    margin: 50px 0;
+}
+
+.dogslib-list img {
+    margin: 10px 0;
+}
+
+.dogslib-list .description {
+    font-size: 80%;
+    margin-top: 20px;
+}
+
+dfn {
+    font-style: normal;
+    font-weight: bold;
+    color: #503729;
+    text-decoration: underline 3px dashed #ebc19a;
+    text-underline-offset: 5px;
+}
+
+#dogslib #adjust {
+    margin-top: 10px;
+}
+
+/* 犬についてページ設定 */
+.about-yun {
+    font-size: 90%;
+    max-width: 768px;
+    margin: 20px auto;
+    padding: 20px 15px;
+    background: #EEEDE9;
+}
+
+.about-yun p {
+    font-size: 85%;
+    margin-top: 20px;
+}
+
+.for-pet {
+    margin: 30px 0 50px;
+    font-size: 90%;
+}
+
+.for-pet dd {
+    font-size: 85%;
+    margin: 20px 0;
+}
+
+.for-pet ul li {
+    font-size: 120%;
+    font-weight: bold;
+    color: #503729;
+    text-decoration: underline double 2px #e0837e;
+    text-underline-offset: 5px;
+    margin: 20px 0 60px;
+}
+
+.comment {
+    font-size: 80%;
+    margin: 0 auto 50px;
+}
+
+/* お問い合わせページ設定 */
+.form-description {
+    font-size: 80%;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto 20px;
+    padding: 20px 0;
+    background-color: #ffdebf;
+    color: #503729;
+}
+
+.form-description p {
+    margin: 20px 0;
+}
+
+form {
+    font-size: 90%;
+    color: #503729;
+    width: 240px;
+    margin: 0 auto;
+}
+
+form p {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+form span {
+    font-size: 80%;
+    color: #f00;
+}
+
+form input {
+    margin-top: 10px;
+}
+
+.type {
+    font-weight: normal;
+    text-align: left;
+    margin-top: 0;
+}
+
+textarea {
+    width: 200px;
+    margin: 10px 0 30px;
+}
+
+.form-btn input {
+    margin: 5px;
+}

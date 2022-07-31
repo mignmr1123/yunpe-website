@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="ゆんぺ編集部">
+    <meta name="description" content="犬情報サイト　ゆんペのお問い合わせページです。取扱い犬種や色などについてのご要望、または購入前のご不明点などのお問い合わせが可能です。お気軽にご相談いただけます。">
+    <meta name="keywords" content="お問い合わせ,ブリーダー,犬情報サイト,芦屋">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="犬情報サイト　ゆんペ　〜お問い合わせ〜" />
+    <!-- 要設定　<meta property="og:url" content=" ページのurl" /> -->
+    <meta property="og:description" content="犬情報サイト　ゆんペのお問い合わせページです。取扱い犬種や色などについてのご要望、または購入前のご不明点などのお問い合わせが可能です。お気軽にご相談いただけます。" />
+    <!-- 要設定　<meta property="og:image" content=" サムネイル画像の URL" /> -->
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="犬情報サイト　ゆんペ" />
+
+    <title>犬情報サイト　ゆんペ　〜お問い合わせ〜</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" and(min-width:375px)>
+</head>
+
+<body id="form">
+    <header>
+        <a href="index.html"  id="title-link">
+            <p>
+                <img src="img/logo/sitelogo.png" alt="サイトロゴ" width="50" height="50">
+            </p>
+            <p id="title">
+                <span id="title-info">犬情報サイト</span><br>
+                <span id="title-yunpe">ゆんペ</span>
+            </p>
+        </a>
+    </header>
+
+<div id="wrap">
+    <nav>
+        <ul id="g-nav">
+            <div class="g-nav">
+            <li>
+                <a href="profile.html">
+                    <div class="nav-menu">
+                        <p><img src="img/logo/profile-logo.png" alt="プロフィールページロゴ" width="30" height="30"></p>
+                        <div>プロフィール</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="dogslib.html">
+                    <div class="nav-menu">
+                        <p><img src="img/logo/dogslib-logo.png" alt="犬図鑑ページロゴ" width="30" height="30"></p>
+                    <div>犬図鑑</div>
+                    </div>
+                </a>
+            </li>
+            </div>
+            <div class="g-nav">
+            <li>
+                <a href="about.html">
+                    <div class="nav-menu">
+                        <p><img src="img/logo/dog-logo.png" alt="犬についてページロゴ" width="30" height="30"></p>
+                    <div>犬について</div>
+                    </div>
+                </a>                    
+            </li>
+            <li>
+                <a href="form.html">
+                    <div class="nav-menu">
+                        <p><img src="img/logo/form-logo.png" alt="お問い合わせページのロゴです。" width="30" height="30"></p>
+                    <div>お問い合わせ</div>
+                    </div>
+                </a>
+            </li>
+            </div>
+        </ul>
+    </nav>
+</div>
+
+    <article>
+        <div id="page-title">
+            <p>
+                <img src="img/logo/form-logo.png" alt="お問い合わせページロゴ" width="30" height="30">
+            </p>
+            <h1>お問い合わせ</h1>
+            <p>
+                <img src="img/logo/form-logo.png" alt="お問い合わせページロゴ" width="30" height="30">
+            </p>
+        </div>
+
+        <div class="form-description">
+        <p>
+            取扱い犬種や色などについてのご要望、<br>
+            または購入前に不明な点がございましたら、<br>
+            下記フォームよりお気軽にご相談ください。<br>
+        </p>
+        <p>
+            必要事項を記入しご確認のうえ、<br>
+            「送信する」をクリックしてください。<br>
+        </p>
+        <p>
+            ご登録いただいた個人情報は、<br>
+            お問い合わせ内容の確認以外には<br>
+            使用いたしません。
+        </p>
+        </div>
+
+        <form action="#" method="post" enctype="text/plain">
+            <p>
+                <label for="name">お名前<span>（必須）</span><br>
+                    <input type="text" name="name" placeholder="全角で入力してください" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">メールアドレス<span>（必須）</span><br>
+                    <input type="email" name="email" placeholder="半角で入力してください" required>
+                </label>
+            </p>
+            <p>
+                <label for="type">お問い合わせ種類<span>（必須）</span><br>
+                    <div class="type">
+                    <input type="checkbox" name="dogtype" value="取り扱いの犬種について ">取り扱いの犬種について<br>
+                    <input type="checkbox" name="counseling" value="購入前のご相談 ">購入前のご相談<br>
+                    <input type="checkbox" name="other" value="その他">その他
+                    </div>
+                </label>
+            </p>
+            <p>
+                <label for="comment">
+                    お問い合わせ&相談内容<span>（必須）</span><br>
+                    <textarea name="comment" placeholder="できるだけ具体的にご記入お願いいたします"></textarea>
+                </label>
+            </p>
+            <div class="form-btn">
+                <input type="submit" value="送信">
+                <input type="reset" value="リセット">
+            </div>
+        </form>
+    </article>
+</div>
+<!-- ブリーダーサイトボタン -->
+    <aside>
+        <a href="profile.html#b-site-title" id="b-site">
+            <p>ゆんぺの<br>ブリーダーサイトは<br>こちら→→</p>
+        </a>
+    </aside>
+
+<!-- TOP↑ボタン -->
+    <div class="top-btn">
+        <a href="#">TOP↑</a>
+    </div>
+
+<!-- フッター -->
+    <footer>
+        <small>Copyright&nbsp;&copy;&nbsp;2022&nbsp;Your&nbsp;Yname.&nbsp;All&nbsp; Rights&nbsp;Reserved.</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="smoothscroll.js"></script>
+</body>
+</html>
