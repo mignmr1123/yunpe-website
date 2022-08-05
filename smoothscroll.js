@@ -1,11 +1,11 @@
 //aタグをクリックしたときのスムーズスクロール
 $(function(){
  $('a[href^="#"]').click(function(){     // #で始まるアンカーをクリックした場合に処理
-  var speed = 1000;                    // スクロールの速度（1000＝１秒）
+  var speed = 300;                    // スクロールの速度（1000＝１秒）
   var href= $(this).attr("href");    // アンカーの値取得
   var target = $(href == "#" || href == "" ? 'html' : href); // 移動先を取得
   var position = target.offset().top;   // 移動先を数値で取得
-  $("html, body").animate({scrollTop:position}, speed, "swing"); // スムーススクロール
+  $("html, body").animate({scrollTop:position}, speed, "linear"); // スムーススクロール
   return false;
  });
 });
@@ -16,7 +16,7 @@ $(function(){
 $(function() {
  var topBtn = $('.top-btn');	
  topBtn.hide();
- //スクロールが500に達したらボタン表示
+ //スクロールが250に達したらボタン表示
  $(window).scroll(function () {
   if ($(this).scrollTop() > 250) {
    topBtn.fadeIn();
