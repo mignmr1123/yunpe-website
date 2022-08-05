@@ -166,7 +166,7 @@ nav a:hover {
     font-size: 90%;
     display: inline-block;
     text-decoration: underline dotted 4px #e0837e;
-    text-underline-offset: 5px;
+    text-underline-offset: 2px;
 }
 
 /* グローバルナビ設定2(index以外の共通設定) */
@@ -273,7 +273,7 @@ td {
 #b-site-title {
     padding-bottom: 10px;
     text-decoration: underline dotted 4px #e0837e;
-    text-underline-offset: 5px;
+    text-underline-offset: 2px;
 }
 
 #b-intro {
@@ -345,7 +345,7 @@ dfn {
     font-weight: bold;
     color: #503729;
     text-decoration: underline 3px dashed #ebc19a;
-    text-underline-offset: 5px;
+    text-underline-offset: 2px;
 }
 
 #dogslib #adjust {
@@ -384,7 +384,7 @@ dfn {
     font-weight: bold;
     color: #503729;
     text-decoration: underline double 2px #e0837e;
-    text-underline-offset: 5px;
+    text-underline-offset: 2px;
     padding-bottom: 10px;
     margin-bottom:60px;
 }
